@@ -1,6 +1,21 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity 0.8.17;
 
+//      ____       _ _______ _           
+//     |  _ \     (_)__   __| |          
+//     | |_) |_ __ _   | |  | |__   __ _ 
+//     |  _ <| '__| |  | |  | '_ \ / _` |
+//     | |_) | |  | |  | |  | | | | (_| |
+//     |____/|_|  |_|  |_|  |_| |_|\__,_|
+//   _____                  _         _____             
+//  / ____|                | |       / ____|            
+// | |     _ __ _   _ _ __ | |_ ___ | |  __ _   _ _   _ 
+// | |    | '__| | | | '_ \| __/ _ \| | |_ | | | | | | |
+// | |____| |  | |_| | |_) | || (_) | |__| | |_| | |_| |
+//  \_____|_|   \__, | .__/ \__\___/ \_____|\__,_|\__, |
+//               __/ | |                           __/ |
+//              |___/|_|                          |___/   
+
 import "https://github.com/ProjectOpenSea/operator-filter-registry/blob/main/src//DefaultOperatorFilterer.sol";
 import "@openzeppelin/contracts/finance/PaymentSplitter.sol";
 import "@openzeppelin/contracts/access/Ownable.sol"; 
