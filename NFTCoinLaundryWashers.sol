@@ -31,7 +31,7 @@ contract NFTCoinLaundryWashers is
 
     uint public MAX_ORDER  = 20;
     uint public MAX_SUPPLY = 105;
-    uint public PRICE      = 0.03 ether;
+    uint public PRICE      = 0.08 ether;
 
     bool public isActive   = true; 
 
@@ -49,7 +49,7 @@ contract NFTCoinLaundryWashers is
     ];
 
     constructor()
-    ERC721B("Washers", "WASH", 1)
+    ERC721B("Coin-Laundry Official", "WASH", 1)
     PaymentSplitter(addressList, shareList) {
         _baseTokenURI = "ipfs://bafybeielahtpv7xai4g2px337kcu5w7ocrkxdu4rlshxko2bag2pqczowu/";
         _tokenURISuffix = ".json";
@@ -57,7 +57,7 @@ contract NFTCoinLaundryWashers is
         for(uint i = 1; i <= 74; ++i){
             _mint( msg.sender, i);
         }
-        _mint(0x2C7C6E83aE6b0b37D64f3568df668D880dC58A73, 75);
+        _mint(0x5f7d007aB2A395a288ff83cCf2a8B921D6d96193, 75);
     }
 
     fallback() external payable {}
@@ -118,7 +118,7 @@ contract NFTCoinLaundryWashers is
     }
 
      //Overrides
-     function setApprovalForAll(address operator, bool approved) public virtual override(ERC721B, IERC721) onlyAllowedOperatorApproval(operator) {
+    function setApprovalForAll(address operator, bool approved) public virtual override(ERC721B, IERC721) onlyAllowedOperatorApproval(operator) {
         super.setApprovalForAll(operator, approved);
     }
 
